@@ -33,7 +33,7 @@ function App() {
 
 const items = { password: a }
 
-        const response = await fetch('https://chat-server-lake-five.vercel.app/passfetch', {
+        const response = await fetch('mongodb+srv://robinkumardbg11:aPTJ!E8LbWEgZZf@first.qxoadwq.mongodb.net/Chatting', {
             method: 'POST',
             body: JSON.stringify(items),
             headers: { 'Content-Type': 'application/json' }
