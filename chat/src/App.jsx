@@ -1,56 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React from "react";
+import { BrowserRouter,Route,Routes } from "react-router-dom";
+import Home from "./Home"
+import Mess from "./Mess"
+import { Ch } from "./Context"
 function App() {
-  const [a, b] = useState()
+return(<>
+
+<Ch>
+<BrowserRouter>
+<Routes>
+  <Route path="/" element={<Home/>}></Route>
+  <Route path="/mess" element={<Mess/>}></Route>
+</Routes>
+</BrowserRouter>
 
 
-  // useEffect(() => {
-  //   const cartindb = async () => {
-
-  //       const items = { password: a }
-
-  //       const response = await fetch('https://e-commerce-z43x.vercel.app/cart', {
-  //           method: 'POST',
-  //           body: JSON.stringify(items),
-  //           headers: { 'Content-Type': 'application/json' }
-  //       })
-
-  //       const findedone = await response.json()
-  //       console.log(findedone)
-  //       u(findedone)
-  //   }})
-
-
-
-  return (
-    <>
-    <input type="text" value={a} onChange={(e)=>{b(e.target.value)}} />
-    <button onClick={async()=>{
-
-
-const items = { password: a }
-
-        const response = await fetch('https://chatting-silk-nu.vercel.app/fetch' ,{
-            method: 'POST',
-            body: JSON.stringify(items),
-            headers: { 'Content-Type': 'application/json' }
-        })
-
-        const findedone = await response.json()
-        console.log(findedone)
+</Ch>
    
-
-
-
-
-
-
-
-
-        }}></button>
     </>
   )
 }
