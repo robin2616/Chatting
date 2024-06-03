@@ -4,30 +4,53 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [a, b] = useState()
+
+
+  // useEffect(() => {
+  //   const cartindb = async () => {
+
+  //       const items = { password: a }
+
+  //       const response = await fetch('https://e-commerce-z43x.vercel.app/cart', {
+  //           method: 'POST',
+  //           body: JSON.stringify(items),
+  //           headers: { 'Content-Type': 'application/json' }
+  //       })
+
+  //       const findedone = await response.json()
+  //       console.log(findedone)
+  //       u(findedone)
+  //   }})
+
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <input type="text" value={a} onChange={(e)=>{b(e.target.value)}} />
+    <button onClick={async()=>{
+
+
+const items = { password: a }
+
+        const response = await fetch('mongodb+srv://robinkumardbg11:aPTJ!E8LbWEgZZf@first.qxoadwq.mongodb.net/passfetch', {
+            method: 'POST',
+            body: JSON.stringify(items),
+            headers: { 'Content-Type': 'application/json' }
+        })
+
+        const findedone = await response.json()
+        console.log(findedone)
+   
+
+
+
+
+
+
+
+
+        }}></button>
     </>
   )
 }
