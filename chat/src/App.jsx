@@ -33,7 +33,7 @@ function App() {
 
 const items = { password: a }
 
-        const response = await fetch('https://chat-server-lake-five.vercel.app/passfetch', {
+        const response = await fetch('http://localhost:3000/fetch' ,{
             method: 'POST',
             body: JSON.stringify(items),
             headers: { 'Content-Type': 'application/json' }
