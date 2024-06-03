@@ -56,7 +56,11 @@ app.post('/fetch',async(req, res)=>{
     res.json(rob)
 })
 
+app.post('/showmess',async(req, res)=>{
+  const rob=await message.find();
+  res.json(rob)
 
+})
     
 
 

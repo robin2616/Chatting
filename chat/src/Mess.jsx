@@ -2,6 +2,7 @@ import React from "react"
 import { useContext } from "react"
 import { Mycontext } from "./Context"
 import { useState } from "react"
+import { useEffect } from "react"
 
 function Mess() {
     const { name } = useContext(Mycontext)
@@ -10,6 +11,25 @@ function Mess() {
     const now = new Date();
      const localTime = now.toLocaleTimeString();
      const localdate=now.toLocaleDateString();
+
+useEffect(()=>{
+const showmess=async()=>{
+    const response = await fetch('https://node-mongo-pz0o.onrender.com/showmess', {
+                method: 'POST',
+                body: JSON.stringify(),
+                headers: { 'Content-Type': 'application/json' }
+            })
+
+            const findedone = await response.json()
+            console.log(findedone)
+            
+}
+showmess();
+
+},[])
+
+
+
     return (<>
 <div className=" w-[600px] h-[400px] border-black border-2 absolute top-[60px] left-[370px] bg-blue-100">
 
@@ -25,7 +45,7 @@ function Mess() {
         onClick={async()=>{
             const share={name:name,message:a,time:localTime,date:localdate}
 
-            const response = await fetch('https://node-mongo-pz0o.onrender.com/fetch', {
+            const response = await fetch('https://node-mongo-pz0o.onrender.com/mess', {
                 method: 'POST',
                 body: JSON.stringify(share),
                 headers: { 'Content-Type': 'application/json' }
