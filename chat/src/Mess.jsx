@@ -1,9 +1,11 @@
 import React from "react"
 import { useContext } from "react"
 import { Mycontext } from "./Context"
+import { useState } from "react"
 
 function Mess() {
     const { name } = useContext(Mycontext)
+    const[a,b]=useState()
     console.log(name)
     const now = new Date();
      const localTime = now.toLocaleTimeString();
@@ -25,7 +27,7 @@ function Mess() {
 
             const response = await fetch('https://node-mongo-pz0o.onrender.com/fetch', {
                 method: 'POST',
-                body: JSON.stringify(items),
+                body: JSON.stringify(share),
                 headers: { 'Content-Type': 'application/json' }
             })
 
