@@ -2,7 +2,11 @@ const mongoose= require(id:"mongoose");
 const uri="mongodb+srv://robinkumardbg11:aPTJ!E8LbWEgZZf@first.qxoadwq.mongodb.net/Chatting"
 mongoose.connect(uri);
 
-
+app.post('/passfetch',async(req,res)=>{
+    const user=await Product.find({password:req.body.password})
+    res.json(user)
+    console.log(user)
+    })
 
 
 
