@@ -55,8 +55,8 @@ console.log(x)
 
     return (<>
     
-    <span className="text-4xl sm:text-6xl font-bold absolute left-[38%] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Guchi Puchi</span>
-      <div ref={chatBoxRef}   class="w-[600px] h-[400px] absolute top-[60px] left-[370px] bg-white rounded-lg shadow-xl overflow-y-auto custom-scrollbar p-4">
+    <span id="heading" className="text-4xl sm:text-6xl font-bold absolute left-[38%] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Guchi Puchi</span>
+      <div ref={chatBoxRef} id="mainbox"   class="w-[600px] h-[400px] absolute top-[60px] left-[370px] bg-white rounded-lg shadow-xl overflow-y-auto custom-scrollbar p-4">
     <div  class="space-y-4">
        {/* <div className=" bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">asjndfjkanfs</div> */}
 {x.map((i)=>(<>
@@ -77,7 +77,7 @@ console.log(x)
 
 
 
-        <div class="form-floating shadow-lg mb-3 absolute top-[470px] w-[500px] left-[370px]">
+        <div id="inp" class="form-floating shadow-lg mb-3 absolute top-[470px] w-[500px] left-[370px]">
             <input onKeyDown={handleKeyPress} type="text" value={c} onChange={(e)=>{d(e.target.value)}} class="form-control"   />
             <label for="floatingInput">Write Message</label>
         </div>

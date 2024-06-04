@@ -20,4 +20,50 @@ body{
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: #4176e1;
   }
+ 
+  @media only screen and (max-width: 600px) {
   
+#mainbox{
+    transform: scale(0.5);
+    translate: -490px -200px;
+    height: 1000px;
+}
+#heading{
+    translate: -60px 40px;
+}
+#myButton{
+
+
+}
+#inp{
+width: 200px;
+translate: -300px 100px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
