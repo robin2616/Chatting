@@ -1,4 +1,4 @@
-/* App.css
+/* App.css */
 body{
     background-color: red;
 }
@@ -21,7 +21,7 @@ body{
     background: #4176e1;
   }
  
-  @media only screen and (max-width: 600px) {
+  /* @media only screen and (max-width: 600px) {
   body{width: 500px;
 height: 1000px;}
 #mainbox{position: fixed;
@@ -45,13 +45,13 @@ translate: -360px 180px;
 }
 #refresh{    transform: scale(0.6);
     translate: -700px 180px;
+}
+
+
+
+
+
 } */
-
-
-
-
-
-/* } */
 
 
 
