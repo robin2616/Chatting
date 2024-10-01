@@ -99,7 +99,7 @@ console.log(x)
 
 
 
-        <div id="inp" class="form-floating shadow-lg mb-3 absolute top-[470px] w-[500px] left-[370px]">
+        {/* <div id="inp" class="form-floating shadow-lg mb-3 absolute top-[470px] w-[500px] left-[370px]">
             <input onKeyDown={handleKeyPress} type="text" value={c} onChange={(e)=>{d(e.target.value)}} class="form-control"   />
             <label for="floatingInput">Write Message</label>
         </div>
@@ -126,9 +126,9 @@ console.log(x)
 
 
         }}
-        class="btn shadow-lg btn-info absolute top-[475px] w-[100px] h-[50px] left-[880px]"><IoSend className=" text-2xl translate-x-6"/></button>
+        class="btn shadow-lg btn-info absolute top-[475px] w-[100px] h-[50px] left-[880px]"><IoSend className=" text-2xl translate-x-6"/></button> */}
 
-<button id="refresh" className="text-2xl absolute top-[470px] left-[1000px] bg-yellow-300 p-3 rounded-xl" onClick={()=>{location.reload()}}><FiRefreshCcw/></button>
+{/* <button id="refresh" className="text-2xl absolute top-[470px] left-[1000px] bg-yellow-300 p-3 rounded-xl" onClick={()=>{location.reload()}}><FiRefreshCcw/></button> */}
     </>)
 }
 export default Mess
