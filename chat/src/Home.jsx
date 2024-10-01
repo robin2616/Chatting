@@ -38,7 +38,7 @@ function Home() {
 
 
         }}>Login</button>
-        <span><FaHeart className='text-red-500 text-[100px] absolute top-[220px] left-[360px]'/></span>
+        {/* <span><FaHeart className='text-red-500 text-[100px] absolute top-[220px] left-[360px]'/></span>
         <span><FaHeart className='text-red-500 text-[100px] absolute top-[220px] left-[720px]'/></span>
         <span><FaHeart className='text-red-500 text-[100px] absolute top-[110px] left-[360px]'/></span>
         <span><FaHeart className='text-red-500 text-[100px] absolute top-[110px] left-[480px]'/></span>
@@ -47,7 +47,7 @@ function Home() {
         <span><FaHeart className='text-red-500 text-[100px] absolute top-[350px] left-[360px]'/></span>
         <span><FaHeart className='text-red-500 text-[100px] absolute top-[350px] left-[480px]'/></span>
         <span><FaHeart className='text-red-500 text-[100px] absolute top-[350px] left-[600px]'/></span>
-        <span><FaHeart className='text-red-500 text-[100px] absolute top-[350px] left-[720px]'/></span>
+        <span><FaHeart className='text-red-500 text-[100px] absolute top-[350px] left-[720px]'/></span> */}
     </>)
 }
 export default Home

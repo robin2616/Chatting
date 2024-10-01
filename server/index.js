@@ -9,10 +9,6 @@ console.log("hello world");
  app.use(bodyParser.json());
 
 
-
-
-
-
 async function main() {
    await mongoose.connect('mongodb+srv://robinkumardbg11:aPTJ!E8LbWEgZZf@first.qxoadwq.mongodb.net/chat?retryWrites=true&w=majority&appName=First');
   console.log("connection successful")
